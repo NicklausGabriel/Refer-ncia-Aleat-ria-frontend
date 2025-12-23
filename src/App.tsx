@@ -28,7 +28,7 @@ function App() {
   return (
     <Card.Root
       w={{ base: "100vw", md: "lg" }}
-      h={{ base: "100vh", md: "auto" }}
+      h={{ base: "100%", md: "auto" }}
       maxW={{ base: "100vw", md: "lg" }}
       borderRadius={{ base: "0", md: "xl" }}
       boxShadow={{ base: "none", md: "lg" }}
