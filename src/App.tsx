@@ -65,14 +65,14 @@ function App() {
       <Card.Footer gap="2">
         <Button
           width="100%"
-          variant="ghost"
+          variant="solid"
           loading={loading}
           disabled={awitNextReference}
           onClick={() => {
             getNewReference();
           }}
         >
-          Gerar referência
+          Clique aqui para gerar referência
         </Button>
       </Card.Footer>
     </Card.Root>
