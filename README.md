@@ -14,14 +14,12 @@ Aplicação web desenvolvida para gerar referências visuais aleatórias para es
  
 <h2>Preview:</h2>
 <h3>Desktop:</h3>
-<img width="1865" height="958" alt="image" src="https://github.com/user-attachments/assets/c607b713-1671-4b67-9dce-f2d7a2838df9" />
-<img width="1865" height="957" alt="image" src="https://github.com/user-attachments/assets/435b882c-199e-4371-b7a9-b0e5c3bccf0e" />
+<img width="1865" height="958" alt="image" src="https://res.cloudinary.com/dmqy0gmqw/image/upload/v1768241142/3e000896-0222-4d89-9df0-0928a867c2d9.png"/>
+<img width="1865" height="957" alt="image" src="https://res.cloudinary.com/dmqy0gmqw/image/upload/v1768241098/4d1f1e05-7766-42e0-91c2-308948468209.png"/>
 
 Mobile:
-<img width="362" height="643" alt="image" src="[https://github.com/user-attachments/assets/ae6bea9d-cc0c-4d51-b70c-e33c3ea12770](https://github.com/user-attachments/assets/437e32f5-0ae7-4767-840f-4b578a6ee811)" />
-
-<img width="362" height="641" alt="image" src="https://github.com/user-attachments/assets/2e37ae72-2fae-4195-a06e-119a695fcc1c" />
-
+<img width="362" height="643" alt="image" src="https://res.cloudinary.com/dmqy0gmqw/image/upload/v1768240984/Screenshot_20260112-145331_2_hap39r.jpg" />
+<img width="362" height="641" alt="image" src="https://res.cloudinary.com/dmqy0gmqw/image/upload/v1768240984/Screenshot_20260112-145352_2_so2zha.jpg" />
 
 <h2>Sobre o Projeto:</h2>
 Este projeto foi criado a partir de uma necessidade pessoal durante estudos de desenho:
@@ -57,5 +55,4 @@ encontrar referências visuais rapidamente, sem distrações.
   <li>cd React-Vite-bike-shop/</li>
   <li>npm install</li>
   <li>npm run dev</li>
-</ol> 
-
+</ol>
