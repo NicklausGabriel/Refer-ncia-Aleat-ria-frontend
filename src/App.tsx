@@ -28,9 +28,10 @@ export function App() {
 
   const awitNextReference: boolean = (image.url && !imageLoaded) || false;
   const isMobile = useBreakpointValue({
-    base: 1,
-    md: 2,
-    lg: 4,
+    base: true,
+    md: true,
+    lg: true,
+    xl: false,
   });
 
   if (isMobile) {
