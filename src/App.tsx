@@ -33,7 +33,7 @@ export function App() {
     lg: true,
     xl: false,
   });
-
+ 
   if (isMobile) {
     return (
       <Mobile

@@ -34,7 +34,7 @@ export function Mobile(props: getReferenceType) {
           src={props.image.url ? props.image.url : props.cliqueDesenhaImage}
           alt={props.image.url ? props.image.author : "image-inicial"}
         />
-        {props.image.url && (
+        {props.image.url && !props.awitNextReference  && (
           <Text fontSize="sm" fontWeight="700" textAlign="center">
             {props.image.author}
           </Text>

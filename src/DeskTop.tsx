@@ -1,16 +1,8 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Image,
-  Text
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import "./App.css";
 import type { getReferenceType } from "./types";
 
-
 export function DeskTop(props: getReferenceType) {
-
   return (
     <Flex width="100%" height="100%" justifyContent="space-between">
       <Box background="#B8451F" width="30%" color="#ede5da" padding="3rem">
@@ -61,7 +53,7 @@ export function DeskTop(props: getReferenceType) {
           <Button
             borderRadius={0}
             background="#1F4E2E"
-            _hover={{ background:"#4b795aff"}}
+            _hover={{ background: "#4b795aff" }}
             marginTop="1rem"
             fontWeight="bold"
             variant="solid"
@@ -80,7 +72,9 @@ export function DeskTop(props: getReferenceType) {
           <Image
             src={props.image.url}
             alt={props.image.author}
-            onLoad={() => props.setImageLoaded(true)}
+            onLoad={() => {
+              props.setImageLoaded(true);
+            }}
             width="100%"
             height="100%"
             objectFit="cover"
@@ -103,26 +97,22 @@ export function DeskTop(props: getReferenceType) {
             </Text>
           </Flex>
         )}
-
-        <Box
-          position="absolute"
-          bottom="1"
-          right="1"
-          zIndex={1}
-          background="rgba(0, 0, 0, 0.5)"
-          padding="0.75rem 1rem"
-        >
-          <Flex alignItems="center" gap="0.5rem" color="white">
-            <Text fontWeight="bold">Autor:</Text>
-            {props.image.url ? (
+        {props.image.url && !props.awitNextReference && (
+          <Box
+            position="absolute"
+            bottom="1"
+            right="1"
+            zIndex={1}
+            background="rgba(0, 0, 0, 0.5)"
+            padding="0.75rem 1rem"
+          >
+            <Flex alignItems="center" gap="0.5rem" color="white">
+              <Text fontWeight="bold">Autor:</Text>
               <Text>{props.image.author}</Text>
-            ) : (
-              <Text>Gabriel Ferreira</Text>
-            )}
-          </Flex>
-        </Box>
+            </Flex>
+          </Box>
+        )}
       </Box>
     </Flex>
   );
 }
-
