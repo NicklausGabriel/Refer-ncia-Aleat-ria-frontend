@@ -18,7 +18,8 @@ Aplicação web desenvolvida para gerar referências visuais aleatórias para es
 <img width="1865" height="957" alt="image" src="https://github.com/user-attachments/assets/435b882c-199e-4371-b7a9-b0e5c3bccf0e" />
 
 Mobile:
-<img width="362" height="643" alt="image" src="https://github.com/user-attachments/assets/ae6bea9d-cc0c-4d51-b70c-e33c3ea12770" />
+<img width="362" height="643" alt="image" src="[https://github.com/user-attachments/assets/ae6bea9d-cc0c-4d51-b70c-e33c3ea12770](https://github.com/user-attachments/assets/437e32f5-0ae7-4767-840f-4b578a6ee811)" />
+
 <img width="362" height="641" alt="image" src="https://github.com/user-attachments/assets/2e37ae72-2fae-4195-a06e-119a695fcc1c" />
 
 
