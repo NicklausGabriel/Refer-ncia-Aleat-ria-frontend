@@ -1,6 +1,8 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Link, Text } from "@chakra-ui/react";
 import "./App.css";
 import type { getReferenceType } from "./types";
+import { AiFillLike } from "react-icons/ai";
+import { IoEyeSharp } from "react-icons/io5";
 
 export function DeskTop(props: getReferenceType) {
   return (
@@ -50,26 +52,36 @@ export function DeskTop(props: getReferenceType) {
               2025
             </Text>
           </Flex>
+
           <Button
-            borderRadius={0}
-            background="#1F4E2E"
-            _hover={{ background: "#4b795aff" }}
-            marginTop="1rem"
-            fontWeight="bold"
-            variant="solid"
+            borderRadius="999px"
+            bg="#2A2A2A"
+            color="white"
+            px="1.25rem"
+            py="0.6rem"
+            fontSize="sm"
+            fontWeight="500"
+            display="flex"
+            alignItems="center"
+            gap="0.4rem"
+            _hover={{ bg: "#3A3A3A" }}
+            _active={{ bg: "#1F1F1F" }}
+            _focus={{ boxShadow: "none" }}
             loading={props.loading}
             disabled={props.awitNextReference}
-            onClick={() => {
-              props.getNewReference();
-            }}
+            onClick={props.getNewReference}
           >
-            Clique aqui para gerar referência
+            Clique Desenhe
+            <Text as="span" fontWeight="300">
+              +
+            </Text>
           </Button>
         </Flex>
       </Box>
       <Box background="#ede5da" width="70%" position="relative">
         {props.image.url ? (
           <Image
+            objectFit="contain"
             src={props.image.url}
             alt={props.image.author}
             onLoad={() => {
@@ -77,7 +89,6 @@ export function DeskTop(props: getReferenceType) {
             }}
             width="100%"
             height="100%"
-            objectFit="cover"
           />
         ) : (
           <Flex
@@ -106,9 +117,42 @@ export function DeskTop(props: getReferenceType) {
             background="rgba(0, 0, 0, 0.5)"
             padding="0.75rem 1rem"
           >
-            <Flex alignItems="center" gap="0.5rem" color="white">
-              <Text fontWeight="bold">Autor:</Text>
-              <Text>{props.image.author}</Text>
+            <Flex gap="1rem">
+              <Link
+                href={props.image.userPage}
+                borderRadius="999px"
+                bg="#2A2A2A"
+                color="white"
+                px="1.25rem"
+                py="0.6rem"
+                fontSize="sm"
+                fontWeight="500"
+                display="flex"
+                justifyContent="center"
+                _hover={{ bg: "#3A3A3A" }}
+              >
+                Página do Autor
+              </Link>
+              {props.image.likes > 0 && (
+                <Flex alignItems="center" gap="0.4rem">
+                  <Text as="span" fontWeight="300">
+                    {props.image.views}
+                  </Text>
+                  <IoEyeSharp />
+                </Flex>
+              )}
+              {props.image.likes > 0 && (
+                <Flex alignItems="center" gap="0.4rem">
+                  <Text fontSize="sm" fontWeight="300">
+                    {props.image.likes}
+                  </Text>
+                  <AiFillLike />
+                </Flex>
+              )}
+              <Flex alignItems="center" gap="0.4rem" color="white">
+                <Text fontWeight="bold">Autor:</Text>
+                <Text>{props.image.author}</Text>
+              </Flex>
             </Flex>
           </Box>
         )}
